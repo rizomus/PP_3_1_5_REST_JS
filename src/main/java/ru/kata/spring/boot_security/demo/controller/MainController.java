@@ -54,7 +54,7 @@ public class MainController {
         User admin = userService.findByUsername(principal.getName());
         model.addAttribute("admin", admin);
 
-        List<User> users = userService.findAll();
+        List<User> users = userService.allUsers();
         model.addAttribute("users", users);
         return "admin";
     }

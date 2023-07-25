@@ -58,10 +58,6 @@ public class UserService implements UserDetailsService {
         userRepository.deleteById(id);
     }
 
-    public List<User> findAll() {
-        return userRepository.findAll();
-    }
-
     public Optional<User> findById(long id) {
         return userRepository.findById(id);
     }
